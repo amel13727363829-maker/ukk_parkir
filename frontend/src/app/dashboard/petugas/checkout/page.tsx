@@ -790,9 +790,9 @@ export default function CheckOutPage() {
 
                       {/* QR Code untuk QRIS */}
                       {metode_pembayaran === 'qris' && qrCodeUrl && (
-                        <div className="border-t pt-3 flex flex-col items-center gap-3 bg-blue-50 p-4 rounded">
+                        <div className="border-t pt-3 flex flex-col items-center gap-3 bg-pink-50 p-4 rounded">
                           <p className="text-sm font-semibold text-gray-700">Scan untuk membayar via QRIS</p>
-                          <div className="bg-white p-3 rounded border border-blue-200">
+                          <div className="bg-white p-3 rounded border border-pink-200">
                             <img src={qrCodeUrl} alt="QRIS QR Code" width={150} height={150} />
                           </div>
                           <p className="text-xs text-gray-600 text-center">Total: Rp {hitungData?.total_bayar?.toLocaleString('id-ID')}</p>
@@ -817,7 +817,7 @@ export default function CheckOutPage() {
 
                     <button
                       onClick={handlePrintStruk}
-                      className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition-colors flex items-center justify-center gap-2"
+                      className="w-full bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-4 rounded-lg transition-colors flex items-center justify-center gap-2"
                     >
                       <FiPrinter size={18} /> Cetak Struk
                     </button>

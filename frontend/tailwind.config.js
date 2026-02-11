@@ -8,12 +8,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#2563eb',
-        secondary: '#64748b',
-        success: '#10b981',
-        danger: '#ef4444',
-        warning: '#f59e0b',
-        info: '#0ea5e9',
+        primary: '#1e3a8a',
+        secondary: '#1e40af',
+        success: '#2563eb',
+        danger: '#3b82f6',
+        warning: '#60a5fa',
+        info: '#93c5fd',
       },
       spacing: {
         '128': '32rem',

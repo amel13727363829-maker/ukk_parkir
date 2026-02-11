@@ -346,27 +346,27 @@ export default function OwnerDashboard() {
       <div
         className={`$\{
           sidebarOpen ? 'w-64' : 'w-0'
-        } bg-gradient-to-b from-purple-900 to-purple-800 text-white transition-all duration-300 overflow-hidden fixed left-0 top-0 h-screen z-30 flex flex-col`}
+        } bg-gradient-to-b from-pink-900 to-pink-800 text-white transition-all duration-300 overflow-hidden fixed left-0 top-0 h-screen z-30 flex flex-col`}
       >
-        <div className="p-6 border-b border-purple-700 flex-shrink-0">
+        <div className="p-6 border-b border-pink-700 flex-shrink-0">
           <h1 className="text-2xl font-bold">Parkir Plus</h1>
-          <p className="text-purple-200 text-sm">Owner Dashboard</p>
+          <p className="text-pink-200 text-sm">Owner Dashboard</p>
         </div>
 
         <nav className="mt-6 space-y-2 px-4 overflow-y-auto flex-1 min-h-0">
-          <div className="px-4 py-3 rounded-lg bg-purple-700 text-white font-semibold">
+          <div className="px-4 py-3 rounded-lg bg-pink-700 text-white font-semibold">
             📊 Dashboard
           </div>
-          <a href="/dashboard/owner/grafik-pendapatan" className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-purple-700 transition-colors text-purple-100 hover:text-white">
+          <a href="/dashboard/owner/grafik-pendapatan" className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-pink-700 transition-colors text-pink-100 hover:text-white">
             <span className="text-xl">📈</span>
             <span>Grafik Pendapatan</span>
           </a>
         </nav>
 
-        <div className="absolute bottom-6 left-4 right-4 text-purple-200 text-xs">
+        <div className="absolute bottom-6 left-4 right-4 text-pink-200 text-xs">
           <p>Anda login sebagai:</p>
           <p className="font-semibold text-white">{user?.nama_lengkap}</p>
-          <p className="text-purple-300">Role: OWNER (Read-Only)</p>
+          <p className="text-pink-300">Role: OWNER (Read-Only)</p>
         </div>
       </div>
 
@@ -559,7 +559,7 @@ export default function OwnerDashboard() {
             {/* Summary Cards */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {/* Total Transaksi */}
-              <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-blue-600">
+              <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-pink-600">
                 <div className="flex items-center justify-between">
                   <div>
                     <p className="text-gray-500 text-sm font-medium">
@@ -570,7 +570,7 @@ export default function OwnerDashboard() {
                     </p>
                     <p className="text-xs text-gray-400 mt-2">Transaksi</p>
                   </div>
-                  <FiBarChart2 className="text-blue-600" size={40} />
+                  <FiBarChart2 className="text-pink-600" size={40} />
                 </div>
               </div>
 
@@ -591,7 +591,7 @@ export default function OwnerDashboard() {
               </div>
 
               {/* Total Kendaraan Masuk */}
-              <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-purple-600">
+              <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-blue-600">
                 <div className="flex items-center justify-between">
                   <div>
                     <p className="text-gray-500 text-sm font-medium">
@@ -654,16 +654,16 @@ export default function OwnerDashboard() {
                   </div>
 
                   {/* QRIS */}
-                  <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg p-4 border border-purple-200">
+                  <div className="bg-gradient-to-r from-pink-50 to-pink-100 rounded-lg p-4 border border-pink-200">
                     <div className="flex items-center justify-between mb-2">
                       <span className="text-gray-700 font-semibold">📱 QRIS</span>
                       <span className="text-gray-900 font-bold">
                         Rp {Math.round(paymentMethodSummary.qris).toLocaleString('id-ID')}
                       </span>
                     </div>
-                    <div className="w-full bg-purple-200 rounded-full h-2">
+                    <div className="w-full bg-pink-200 rounded-full h-2">
                       <div
-                        className="bg-purple-600 h-2 rounded-full"
+                        className="bg-pink-600 h-2 rounded-full"
                         style={{
                           width: `${
                             paymentMethodSummary.cash + paymentMethodSummary.qris > 0
@@ -718,12 +718,12 @@ export default function OwnerDashboard() {
                               Rp {tx.total_bayar.toLocaleString('id-ID')}
                             </td>
                             <td className="px-4 py-3 text-sm">
-                              {tx.status_pembayaran === 'lunas' ? (
+                                     {tx.status_pembayaran === 'lunas' ? (
                                 <span
                                   className={`px-2 py-1 rounded-full text-xs font-semibold ${
                                     tx.metode_pembayaran === 'Tunai'
                                       ? 'bg-orange-100 text-orange-800'
-                                      : 'bg-purple-100 text-purple-800'
+                                               : 'bg-pink-100 text-pink-800'
                                   }`}
                                 >
                                   {tx.metode_pembayaran}

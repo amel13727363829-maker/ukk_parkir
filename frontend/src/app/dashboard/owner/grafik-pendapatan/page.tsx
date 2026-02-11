@@ -230,28 +230,28 @@ export default function GrafikPendapatanPage() {
       <div
         className={`$\{
           sidebarOpen ? 'w-64' : 'w-0'
-        } bg-gradient-to-b from-purple-900 to-purple-800 text-white transition-all duration-300 overflow-hidden fixed left-0 top-0 h-screen z-30 flex flex-col`}
+        } bg-gradient-to-b from-pink-900 to-pink-800 text-white transition-all duration-300 overflow-hidden fixed left-0 top-0 h-screen z-30 flex flex-col`}
       >
-        <div className="p-6 border-b border-purple-700 flex-shrink-0">
+        <div className="p-6 border-b border-pink-700 flex-shrink-0">
           <h1 className="text-2xl font-bold">Parkir Plus</h1>
-          <p className="text-purple-200 text-sm">Owner Dashboard</p>
+          <p className="text-pink-200 text-sm">Owner Dashboard</p>
         </div>
 
         <nav className="mt-6 space-y-2 px-4 overflow-y-auto flex-1 min-h-0">
-          <a href="/dashboard/owner" className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-purple-700 transition-colors text-purple-100 hover:text-white">
+          <a href="/dashboard/owner" className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-pink-700 transition-colors text-pink-100 hover:text-white">
             <span className="text-xl">📊</span>
             <span>Dashboard</span>
           </a>
-          <div className="px-4 py-3 rounded-lg bg-purple-700 text-white font-semibold flex items-center gap-3">
+          <div className="px-4 py-3 rounded-lg bg-pink-700 text-white font-semibold flex items-center gap-3">
             <span className="text-xl">📈</span>
             <span>Grafik Pendapatan</span>
           </div>
         </nav>
 
-        <div className="absolute bottom-6 left-4 right-4 text-purple-200 text-xs">
+        <div className="absolute bottom-6 left-4 right-4 text-pink-200 text-xs">
           <p>Anda login sebagai:</p>
           <p className="font-semibold text-white">{user?.nama_lengkap}</p>
-          <p className="text-purple-300">Role: OWNER (Read-Only)</p>
+          <p className="text-pink-300">Role: OWNER (Read-Only)</p>
         </div>
       </div>
 
@@ -301,7 +301,7 @@ export default function GrafikPendapatanPage() {
                     onClick={() => setSelectedRange(range)}
                   className={`px-6 py-2 rounded-lg font-semibold transition-colors ${
                     selectedRange === range
-                      ? 'bg-purple-600 text-white'
+                      ? 'bg-pink-600 text-white'
                       : 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-50'
                   }`}
                 >
@@ -312,7 +312,7 @@ export default function GrafikPendapatanPage() {
                   onClick={() => setSelectedRange('custom')}
                   className={`px-6 py-2 rounded-lg font-semibold transition-colors ${
                     selectedRange === 'custom'
-                      ? 'bg-purple-600 text-white'
+                      ? 'bg-pink-600 text-white'
                       : 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-50'
                   }`}
                 >
@@ -334,9 +334,9 @@ export default function GrafikPendapatanPage() {
                   Rp {Math.round(averageRevenue).toLocaleString('id-ID')}
                 </p>
               </div>
-              <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-purple-600">
+              <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-pink-600">
                 <p className="text-gray-500 text-sm font-medium">Jumlah Hari</p>
-                <p className="text-3xl font-bold text-purple-600 mt-2">
+                <p className="text-3xl font-bold text-pink-600 mt-2">
                   {revenueData.length}
                 </p>
               </div>
@@ -352,7 +352,7 @@ export default function GrafikPendapatanPage() {
                     <div key={idx} className="flex flex-col items-center gap-2 group" style={{ width: 48, flex: '0 0 auto' }}>
                       <div className="flex flex-col items-center justify-end h-full w-full">
                         <div 
-                          className="bg-gradient-to-t from-purple-600 to-purple-400 w-10 rounded-t transition-all duration-300 hover:from-purple-700 hover:to-purple-500 cursor-pointer"
+                          className="bg-gradient-to-t from-pink-600 to-pink-400 w-10 rounded-t transition-all duration-300 hover:from-pink-700 hover:to-pink-500 cursor-pointer"
                           style={{
                             height: maxRevenue > 0 ? `${(data.pendapatan / maxRevenue) * 100}%` : '0%',
                             minHeight: data.pendapatan > 0 ? '24px' : '6px',
@@ -360,7 +360,7 @@ export default function GrafikPendapatanPage() {
                           }}
                           title={`Rp ${data.pendapatan.toLocaleString('id-ID')}`}
                         />
-                        <div className="opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap text-sm font-bold text-purple-600 mt-3 bg-purple-50 px-3 py-1 rounded-lg">
+                        <div className="opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap text-sm font-bold text-pink-600 mt-3 bg-pink-50 px-3 py-1 rounded-lg">
                           Rp {(data.pendapatan / 1000000).toFixed(1)}M
                         </div>
                       </div>
@@ -400,9 +400,9 @@ export default function GrafikPendapatanPage() {
                           </td>
                           <td className="px-4 py-3 text-sm text-center">
                             <div className="flex items-center justify-center gap-2">
-                              <div className="w-32 bg-gray-200 rounded-full h-2">
+                                <div className="w-32 bg-gray-200 rounded-full h-2">
                                 <div
-                                  className="bg-purple-600 h-2 rounded-full transition-all duration-300"
+                                  className="bg-blue-600 h-2 rounded-full transition-all duration-300"
                                   style={{
                                     width: `${(data.pendapatan / totalRevenue) * 100}%`,
                                   }}

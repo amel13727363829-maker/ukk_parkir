@@ -790,7 +790,7 @@ export default function PetugasParkirPage() {
                     {/* Print Button */}
                     <button
                       onClick={handlePrintStruk}
-                      className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition-colors flex items-center justify-center gap-2"
+                      className="w-full bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-4 rounded-lg transition-colors flex items-center justify-center gap-2"
                     >
                       <FiPrinter size={20} />
                       Cetak Struk
@@ -817,28 +817,28 @@ export default function PetugasParkirPage() {
             </div>
 
             {/* Info Section */}
-            <div className="mt-8 bg-blue-50 border border-blue-200 rounded-lg p-6">
-              <h4 className="font-bold text-blue-900 mb-3">📌 Informasi Tarif</h4>
+            <div className="mt-8 bg-pink-50 border border-pink-200 rounded-lg p-6">
+              <h4 className="font-bold text-pink-900 mb-3">📌 Informasi Tarif</h4>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
                 <div>
-                  <p className="font-semibold text-blue-900">🏍️ Motor</p>
-                  <p className="text-blue-800">• Tarif Awal: Rp 2.000</p>
-                  <p className="text-blue-800">• Per Jam: Rp 1.000</p>
+                  <p className="font-semibold text-pink-900">🏍️ Motor</p>
+                  <p className="text-pink-800">• Tarif Awal: Rp 2.000</p>
+                  <p className="text-pink-800">• Per Jam: Rp 1.000</p>
                 </div>
                 <div>
-                  <p className="font-semibold text-blue-900">🚗 Mobil</p>
-                  <p className="text-blue-800">• Tarif Awal: Rp 5.000</p>
-                  <p className="text-blue-800">• Per Jam: Rp 2.000</p>
+                  <p className="font-semibold text-pink-900">🚗 Mobil</p>
+                  <p className="text-pink-800">• Tarif Awal: Rp 5.000</p>
+                  <p className="text-pink-800">• Per Jam: Rp 2.000</p>
                 </div>
                 <div>
-                  <p className="font-semibold text-blue-900">⭐ VIP</p>
-                  <p className="text-blue-800">• Tarif Awal: Rp 50.000</p>
-                  <p className="text-blue-800">• Per Jam: Rp 10.000</p>
+                  <p className="font-semibold text-pink-900">⭐ VIP</p>
+                  <p className="text-pink-800">• Tarif Awal: Rp 50.000</p>
+                  <p className="text-pink-800">• Per Jam: Rp 10.000</p>
                 </div>
                 <div>
-                  <p className="font-semibold text-blue-900">🌳 Outdoor</p>
-                  <p className="text-blue-800">• Tarif Awal: Rp 10.000</p>
-                  <p className="text-blue-800 text-xs italic">• (hanya dihitung per hari)</p>
+                  <p className="font-semibold text-pink-900">🌳 Outdoor</p>
+                  <p className="text-pink-800">• Tarif Awal: Rp 10.000</p>
+                  <p className="text-pink-800 text-xs italic">• (hanya dihitung per hari)</p>
                 </div>
               </div>
             </div>

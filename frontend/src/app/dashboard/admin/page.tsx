@@ -154,11 +154,11 @@ export default function AdminDashboard() {
       <div
         className={`$\{
           sidebarOpen ? 'w-64' : 'w-0'
-        } bg-gradient-to-b from-blue-900 to-blue-800 text-white transition-all duration-300 overflow-hidden fixed left-0 top-0 h-screen z-30 flex flex-col`}
+        } bg-gradient-to-b from-pink-900 to-pink-800 text-white transition-all duration-300 overflow-hidden fixed left-0 top-0 h-screen z-30 flex flex-col`}
       >
-        <div className="p-6 border-b border-blue-700 flex-shrink-0">
+        <div className="p-6 border-b border-pink-700 flex-shrink-0">
           <h1 className="text-2xl font-bold">Parkir Plus</h1>
-          <p className="text-blue-200 text-sm">Admin Panel</p>
+          <p className="text-pink-200 text-sm">Admin Panel</p>
         </div>
 
         <nav className="mt-6 space-y-2 px-4 overflow-y-auto flex-1 min-h-0">
@@ -166,7 +166,7 @@ export default function AdminDashboard() {
             <Link
               key={item.label}
               href={item.href}
-              className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-blue-700 transition-colors text-blue-100 hover:text-white"
+              className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-pink-700 transition-colors text-pink-100 hover:text-white"
             >
               <span className="text-xl">{item.icon}</span>
               <span>{item.label}</span>
@@ -264,9 +264,9 @@ export default function AdminDashboard() {
               <h2 className="text-xl font-semibold text-gray-800">Admin Dashboard</h2>
             </div>
             <div className="flex items-center gap-4">
-              <div className="text-right">
+                <div className="text-right">
                 <p className="text-sm text-gray-600">{user?.nama_lengkap}</p>
-                <p className="text-xs text-blue-600 font-semibold uppercase">{user?.role}</p>
+                <p className="text-xs text-pink-600 font-semibold uppercase">{user?.role}</p>
               </div>
               <button
                 onClick={handleLogout}
@@ -291,13 +291,13 @@ export default function AdminDashboard() {
 
             {/* Statistics Cards */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-blue-600">
+              <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-pink-600">
                 <div className="flex items-center justify-between">
                   <div>
                     <p className="text-gray-500 text-sm">Total Kendaraan</p>
                     <p className="text-3xl font-bold text-gray-800">{stats.totalVehicles}</p>
                   </div>
-                  <FiTrendingUp className="text-blue-600" size={32} />
+                  <FiTrendingUp className="text-pink-600" size={32} />
                 </div>
               </div>
 
@@ -311,7 +311,7 @@ export default function AdminDashboard() {
                 </div>
               </div>
 
-              <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-purple-600">
+              <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-blue-600">
                 <div className="flex items-center justify-between">
                   <div>
                     <p className="text-gray-500 text-sm">Parkir Aktif</p>
@@ -346,13 +346,13 @@ export default function AdminDashboard() {
                 </div>
               </div>
 
-              <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-blue-600">
+              <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-pink-600">
                 <div className="flex items-center justify-between">
                   <div>
                     <p className="text-gray-500 text-sm">Transaksi Hari Ini</p>
-                    <p className="text-2xl font-bold text-blue-600">{stats.todayTransactions}</p>
+                    <p className="text-2xl font-bold text-pink-600">{stats.todayTransactions}</p>
                   </div>
-                  <FiBarChart2 className="text-blue-600" size={32} />
+                  <FiBarChart2 className="text-pink-600" size={32} />
                 </div>
               </div>
 
@@ -371,7 +371,7 @@ export default function AdminDashboard() {
             <div className="bg-white rounded-lg shadow-md p-6">
               <div className="flex items-center justify-between mb-6">
                 <h3 className="text-lg font-semibold text-gray-800">Transaksi Terbaru</h3>
-                <Link href="/dashboard/transaksi" className="text-blue-600 hover:text-blue-800 text-sm font-semibold">
+                <Link href="/dashboard/transaksi" className="text-pink-600 hover:text-pink-800 text-sm font-semibold">
                   Lihat Semua →
                 </Link>
               </div>
@@ -432,7 +432,7 @@ export default function AdminDashboard() {
                       setShowAreaEditor(true);
                       await fetchAreasForEditor();
                     }}
-                    className="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition"
+                    className="px-4 py-2 bg-pink-600 text-white rounded-lg hover:bg-pink-700 transition"
                   >
                     Edit Kapasitas & Tarif
                   </button>

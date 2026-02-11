@@ -45,16 +45,16 @@ code {
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #eaf2ff;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: #3b82f6;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #1e40af;
 }
 
 /* Smooth transitions */
@@ -68,6 +68,6 @@ textarea {
 
 /* Focus styles */
 :focus-visible {
-  outline: 2px solid #3b82f6;
+  outline: 2px solid #1e40af;
   outline-offset: 2px;
 }
